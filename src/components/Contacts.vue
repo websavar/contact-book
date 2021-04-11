@@ -7,6 +7,7 @@
     >
       <Contact
         :contact="contact"
+        @edited-contact="editedContact"
         @toggle-favorite="$emit('toggle-favorite', contact.id)"
         @delete-contact="$emit('delete-contact', contact.id)"
       />
@@ -24,6 +25,11 @@ export default {
   },
   props: {
     contacts: Array
+  },
+  methods: {
+    editedContact (updContact) {
+      this.$emit('edited-contact', updContact)
+    }
   }
 }
 </script>
