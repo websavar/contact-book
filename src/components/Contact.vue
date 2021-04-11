@@ -48,8 +48,11 @@ export default {
         firstname: this.removeHTML(this.$refs.fname.innerHTML).trim(),
         lastname: this.removeHTML(this.$refs.lname.innerHTML).trim(),
         phone: this.$refs.phone.innerHTML.replace(/\D+/g, '').trim(),
-        favorite: false
+        favorite: false,
+        id: this.contact.id
       }
+
+      this.$emit('edited-contact', editedContact)
 
       await fetch(`api/phonebook/${this.contact.id}`, {
         method: 'PUT',
