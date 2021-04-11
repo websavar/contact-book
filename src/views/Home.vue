@@ -7,6 +7,7 @@
     />
     <Contacts
       :contacts="contacts"
+      @edited-contact="editedContact"
       @toggle-favorite="toggleFavorite"
       @delete-contact="deleteContact"
     />
@@ -64,6 +65,10 @@ export default {
       const data = await res.json()
 
       this.contacts = [data, ...this.contacts]
+      this.contactsList = this.contacts
+    },
+    editedContact (updContact) {
+      this.contacts = this.contacts.map(contact => (contact.id === updContact.id) ? (contact = updContact) : contact)
       this.contactsList = this.contacts
     },
     async deleteContact (id) {
