@@ -1,0 +1,102 @@
+{
+  "phonebook": [
+    {
+      "firstname": "Pawel",
+      "lastname": "Herman",
+      "phone": "002111451",
+      "favorite": false,
+      "id": "1"
+    },
+    {
+      "firstname": "Luis",
+      "lastname": "Muller",
+      "phone": "123456789",
+      "favorite": false,
+      "id": "2"
+    },
+    {
+      "firstname": "John",
+      "lastname": "Smitian",
+      "phone": "3253253221",
+      "favorite": false,
+      "id": "7zCic3o"
+    },
+    {
+      "firstname": "Paul",
+      "lastname": "Brown",
+      "phone": "0178826479",
+      "favorite": false,
+      "id": "aeNdG9q"
+    },
+    {
+      "firstname": "Antoni",
+      "lastname": "Johns",
+      "phone": "1213004548",
+      "favorite": false,
+      "id": "71kvQiC"
+    },
+    {
+      "firstname": "Leanne",
+      "lastname": "Graham",
+      "phone": "(160) 200-1111",
+      "favorite": true,
+      "id": "FAEuyrT"
+    },
+    {
+      "firstname": "Ervin",
+      "lastname": "Howell",
+      "phone": "(157) 826-3434",
+      "favorite": false,
+      "id": "ZY306bk"
+    },
+    {
+      "firstname": "Samantha",
+      "lastname": "Bauch",
+      "phone": "(231) 342-3322",
+      "favorite": false,
+      "id": "SHum_6v"
+    },
+    {
+      "firstname": "Patricia",
+      "lastname": "Lebsack",
+      "phone": "(124) 124-5125",
+      "favorite": true,
+      "id": "G8xqH7-"
+    },
+    {
+      "firstname": "Robel",
+      "lastname": "Corkery",
+      "phone": "(112) 312-4144",
+      "favorite": false,
+      "id": "_BPB3i0"
+    },
+    {
+      "firstname": "Chelsey",
+      "lastname": "Dietrich",
+      "phone": "(345) 236-2362",
+      "favorite": false,
+      "id": "XUPTKCg"
+    },
+    {
+      "firstname": "Dennis",
+      "lastname": "Schulist",
+      "phone": "(234) 235-2333",
+      "favorite": false,
+      "id": "NUQXGeC"
+    },
+    {
+      "firstname": "Hamid",
+      "lastname": "Soltani",
+      "phone": "(017) 882-6476",
+      "favorite": false,
+      "id": "ShkOUVj"
+    },
+    {
+      "firstname": "Christian",
+      "lastname": "Harison",
+      "phone": "1312224044",
+      "favorite": false,
+      "id": "EZMvtTx"
+    }
+  ]
+}
