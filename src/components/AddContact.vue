@@ -3,6 +3,8 @@
     <div class="row col-md-12">
       <div class="form-group col-12 col-sm-6 col-md-3">
         <input
+          @load="onSubmit"
+          ref="fname"
           v-model="firstname"
           type="text"
           class="form-control"
@@ -52,8 +54,12 @@ export default {
       firstname: '',
       lastname: '',
       phone: '',
-      favorite: false
+      favorite: false,
+      frst: true
     }
+  },
+  props: {
+    showAddContact: Boolean
   },
   methods: {
     onSubmit (e) {
@@ -76,7 +82,17 @@ export default {
     numberformat () {
       var x = this.phone.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/)
       this.phone = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '')
+    },
+    focusElm () {
+      if (this.frst) {
+        this.$refs.fname.focus()
+        this.frst = false
+      }
     }
+  },
+  updated () {
+    if (this.showAddContact) this.focusElm()
+    else this.frst = true
   }
 }
 </script>
