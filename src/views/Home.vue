@@ -2,7 +2,7 @@
   <main @search="search">
     <AddContact
       v-show="showAddContact"
-      :show-add-contact="showAddContact"
+      :showAddContact="showAddContact"
       @add-contact="addContact"
     />
     <Contacts
