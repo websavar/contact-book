@@ -1,24 +1,11 @@
-# vue-crash-2021
+# Contact Book
 
-## Project setup
-```
-npm install
-```
+## Goal
+Develop a contact book web application with a search feature with Vue.js.
+Add another features like add to favorite list numbers, add a new contact, edit and delete an existing contact.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Setup and run
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Run npm install to install required dependencies
+2. Run npm backend to run the json database on http://localhost:5002/phonebook
+3. Run npm serve to run the project and Open http://localhost:8080
